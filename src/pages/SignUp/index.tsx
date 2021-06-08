@@ -9,8 +9,8 @@ import getValidationErrors from '../../utils/getValidationErrors';
 
 import logoImg from '../../assets/logo.svg';
 
-import Input from '../../components/input/index';
-import Button from '../../components/button/index';
+import Input from '../../components/Input/index';
+import Button from '../../components/Button/index';
 
 import { Container, Content, Background } from './styles';
 
