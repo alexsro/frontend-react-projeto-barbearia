@@ -5,6 +5,12 @@ import {
 import { Form } from '@unform/web';
 import { FormHandles } from '@unform/core';
 import * as Yup from 'yup';
+import { Link, useHistory } from 'react-router-dom';
+
+import api from '../../services/api';
+
+import { useToast } from '../../hooks/Toast';
+
 import getValidationErrors from '../../utils/getValidationErrors';
 
 import logoImg from '../../assets/logo.svg';
@@ -12,12 +18,22 @@ import logoImg from '../../assets/logo.svg';
 import Input from '../../components/Input/index';
 import Button from '../../components/Button/index';
 
-import { Container, Content, Background } from './styles';
+import {
+  Container, Content, AnimationContainer, Background,
+} from './styles';
+
+interface SignUpFormData {
+  name: string;
+  email: string;
+  password: string;
+}
 
 const SignUp: React.FC = () => {
   const formRef = useRef<FormHandles>(null);
+  const { addToast } = useToast();
+  const history = useHistory();
 
-  const handleSubmit = useCallback(async (data: unknown) => {
+  const handleSubmit = useCallback(async (data: SignUpFormData) => {
     try {
       formRef.current?.setErrors({});
       const schema = Yup.object().shape({
@@ -29,30 +45,51 @@ const SignUp: React.FC = () => {
       await schema.validate(data, {
         abortEarly: false,
       });
+
+      await api.post('/users', data);
+
+      addToast({
+        type: 'success',
+        title: 'Cadastro realizado!',
+        description: 'Você ja pode fazer seu logon!',
+      });
+
+      history.push('/');
     } catch (err) {
-      const errors = getValidationErrors(err);
-      formRef.current?.setErrors(errors);
+      if (err instanceof Yup.ValidationError) {
+        const errors = getValidationErrors(err);
+        formRef.current?.setErrors(errors);
+        return;
+      }
+
+      addToast({
+        type: 'error',
+        title: 'Error no cadastro',
+        description: 'Ocorreu um error ao fazer o cadastro, cheque as informações.',
+      });
     }
-  }, []);
+  }, [addToast, history]);
   return (
     <Container>
       <Background />
       <Content>
-        <img src={logoImg} alt="GoBarber" />
-        {/* caso fosse necessário passar um valor inicial para algum dos campos
+        <AnimationContainer>
+          <img src={logoImg} alt="GoBarber" />
+          {/* caso fosse necessário passar um valor inicial para algum dos campos
           seria só passar da seguinte maneira: initialData={{ "name do input": 'valor desejado' }}
          */}
-        <Form ref={formRef} onSubmit={handleSubmit}>
-          <h1>Faça seu cadastro</h1>
-          <Input name="name" icon={FiUser} placeholder="Nome" />
-          <Input name="email" icon={FiMail} placeholder="E-mail" />
-          <Input name="password" icon={FiLock} type="password" placeholder="Senha" />
-          <Button type="submit">Cadastrar</Button>
-        </Form>
-        <a href="createaccount">
-          <FiArrowLeft />
-          Voltar para logon
-        </a>
+          <Form ref={formRef} onSubmit={handleSubmit}>
+            <h1>Faça seu cadastro</h1>
+            <Input name="name" icon={FiUser} placeholder="Nome" />
+            <Input name="email" icon={FiMail} placeholder="E-mail" />
+            <Input name="password" icon={FiLock} type="password" placeholder="Senha" />
+            <Button type="submit">Cadastrar</Button>
+          </Form>
+          <Link to="/">
+            <FiArrowLeft />
+            Voltar para logon
+          </Link>
+        </AnimationContainer>
       </Content>
     </Container>
   );
