@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1630454872325" clover="3.2.0">
-  <project timestamp="1630454872325" name="All files">
-    <metrics statements="217" coveredstatements="32" conditionals="47" coveredconditionals="8" methods="61" coveredmethods="6" elements="325" coveredelements="46" complexity="0" loc="217" ncloc="217" packages="12" files="13" classes="13"/>
+<coverage generated="1630539948189" clover="3.2.0">
+  <project timestamp="1630539948189" name="All files">
+    <metrics statements="217" coveredstatements="35" conditionals="47" coveredconditionals="8" methods="61" coveredmethods="8" elements="325" coveredelements="51" complexity="0" loc="217" ncloc="217" packages="12" files="13" classes="13"/>
     <package name="components.Button">
       <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
       <file name="index.tsx" path="F:\Arquivos Desenvolvimento Geral\Repositórios GitHub\Aprendizados-Geral\Bootcamp\2020\frontend-react-projeto-barbearia\src\components\Button\index.tsx">
@@ -11,22 +11,22 @@
       </file>
     </package>
     <package name="components.Input">
-      <metrics statements="13" coveredstatements="10" conditionals="5" coveredconditionals="5" methods="4" coveredmethods="2"/>
+      <metrics statements="13" coveredstatements="13" conditionals="5" coveredconditionals="5" methods="4" coveredmethods="4"/>
       <file name="index.tsx" path="F:\Arquivos Desenvolvimento Geral\Repositórios GitHub\Aprendizados-Geral\Bootcamp\2020\frontend-react-projeto-barbearia\src\components\Input\index.tsx">
-        <metrics statements="13" coveredstatements="10" conditionals="5" coveredconditionals="5" methods="4" coveredmethods="2"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="19" count="14" type="stmt"/>
-        <line num="20" count="14" type="stmt"/>
-        <line num="21" count="14" type="stmt"/>
-        <line num="25" count="14" type="stmt"/>
-        <line num="27" count="14" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="31" count="14" type="stmt"/>
-        <line num="32" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="36" count="14" type="stmt"/>
-        <line num="37" count="6" type="stmt"/>
-        <line num="44" count="14" type="stmt"/>
+        <metrics statements="13" coveredstatements="13" conditionals="5" coveredconditionals="5" methods="4" coveredmethods="4"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="19" count="18" type="stmt"/>
+        <line num="20" count="18" type="stmt"/>
+        <line num="21" count="18" type="stmt"/>
+        <line num="25" count="18" type="stmt"/>
+        <line num="27" count="18" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="31" count="18" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="36" count="18" type="stmt"/>
+        <line num="37" count="10" type="stmt"/>
+        <line num="44" count="18" type="stmt"/>
       </file>
     </package>
     <package name="components.ToastContainer">
@@ -58,7 +58,7 @@
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="index.tsx" path="F:\Arquivos Desenvolvimento Geral\Repositórios GitHub\Aprendizados-Geral\Bootcamp\2020\frontend-react-projeto-barbearia\src\components\Tooltip\index.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="8" count="1" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
       </file>
     </package>
