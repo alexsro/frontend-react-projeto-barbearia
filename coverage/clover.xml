@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1630539948189" clover="3.2.0">
-  <project timestamp="1630539948189" name="All files">
-    <metrics statements="217" coveredstatements="35" conditionals="47" coveredconditionals="8" methods="61" coveredmethods="8" elements="325" coveredelements="51" complexity="0" loc="217" ncloc="217" packages="12" files="13" classes="13"/>
+<coverage generated="1630627531178" clover="3.2.0">
+  <project timestamp="1630627531178" name="All files">
+    <metrics statements="215" coveredstatements="61" conditionals="45" coveredconditionals="12" methods="61" coveredmethods="14" elements="321" coveredelements="87" complexity="0" loc="215" ncloc="215" packages="12" files="13" classes="13"/>
     <package name="components.Button">
       <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
       <file name="index.tsx" path="F:\Arquivos Desenvolvimento Geral\Repositórios GitHub\Aprendizados-Geral\Bootcamp\2020\frontend-react-projeto-barbearia\src\components\Button\index.tsx">
@@ -15,18 +15,18 @@
       <file name="index.tsx" path="F:\Arquivos Desenvolvimento Geral\Repositórios GitHub\Aprendizados-Geral\Bootcamp\2020\frontend-react-projeto-barbearia\src\components\Input\index.tsx">
         <metrics statements="13" coveredstatements="13" conditionals="5" coveredconditionals="5" methods="4" coveredmethods="4"/>
         <line num="16" count="2" type="stmt"/>
-        <line num="19" count="18" type="stmt"/>
-        <line num="20" count="18" type="stmt"/>
-        <line num="21" count="18" type="stmt"/>
-        <line num="25" count="18" type="stmt"/>
-        <line num="27" count="18" type="stmt"/>
+        <line num="19" count="20" type="stmt"/>
+        <line num="20" count="20" type="stmt"/>
+        <line num="21" count="20" type="stmt"/>
+        <line num="25" count="20" type="stmt"/>
+        <line num="27" count="20" type="stmt"/>
         <line num="28" count="1" type="stmt"/>
-        <line num="31" count="18" type="stmt"/>
-        <line num="32" count="1" type="stmt"/>
-        <line num="33" count="1" type="stmt"/>
-        <line num="36" count="18" type="stmt"/>
-        <line num="37" count="10" type="stmt"/>
-        <line num="44" count="18" type="stmt"/>
+        <line num="31" count="20" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="36" count="20" type="stmt"/>
+        <line num="37" count="12" type="stmt"/>
+        <line num="44" count="20" type="stmt"/>
       </file>
     </package>
     <package name="components.ToastContainer">
@@ -63,7 +63,7 @@
       </file>
     </package>
     <package name="hooks">
-      <metrics statements="42" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="13" coveredmethods="0"/>
+      <metrics statements="40" coveredstatements="26" conditionals="6" coveredconditionals="4" methods="13" coveredmethods="6"/>
       <file name="Toast.tsx" path="F:\Arquivos Desenvolvimento Geral\Repositórios GitHub\Aprendizados-Geral\Bootcamp\2020\frontend-react-projeto-barbearia\src\hooks\Toast.tsx">
         <metrics statements="14" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="7" coveredmethods="0"/>
         <line num="20" count="0" type="stmt"/>
@@ -82,35 +82,33 @@
         <line num="57" count="0" type="stmt"/>
       </file>
       <file name="auth.tsx" path="F:\Arquivos Desenvolvimento Geral\Repositórios GitHub\Aprendizados-Geral\Bootcamp\2020\frontend-react-projeto-barbearia\src\hooks\auth.tsx">
-        <metrics statements="28" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="6" coveredmethods="0"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="32" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="35" count="0" type="cond" truecount="0" falsecount="4"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="37" count="0" type="stmt"/>
-        <line num="40" count="0" type="stmt"/>
-        <line num="43" count="0" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
-        <line num="48" count="0" type="stmt"/>
-        <line num="49" count="0" type="stmt"/>
-        <line num="50" count="0" type="stmt"/>
-        <line num="52" count="0" type="stmt"/>
-        <line num="54" count="0" type="stmt"/>
-        <line num="57" count="0" type="stmt"/>
-        <line num="58" count="0" type="stmt"/>
-        <line num="59" count="0" type="stmt"/>
-        <line num="61" count="0" type="stmt"/>
-        <line num="64" count="0" type="stmt"/>
-        <line num="65" count="0" type="stmt"/>
-        <line num="66" count="0" type="stmt"/>
-        <line num="72" count="0" type="stmt"/>
-        <line num="83" count="0" type="stmt"/>
-        <line num="85" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="86" count="0" type="stmt"/>
-        <line num="89" count="0" type="stmt"/>
+        <metrics statements="26" coveredstatements="26" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="7" type="stmt"/>
+        <line num="33" count="4" type="stmt"/>
+        <line num="34" count="4" type="stmt"/>
+        <line num="35" count="4" type="cond" truecount="4" falsecount="0"/>
+        <line num="36" count="2" type="stmt"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="43" count="7" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="57" count="7" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="61" count="1" type="stmt"/>
+        <line num="64" count="7" type="stmt"/>
+        <line num="65" count="1" type="stmt"/>
+        <line num="66" count="1" type="stmt"/>
+        <line num="72" count="7" type="stmt"/>
+        <line num="83" count="7" type="stmt"/>
+        <line num="85" count="7" type="stmt"/>
       </file>
     </package>
     <package name="pages.Dashboard">
